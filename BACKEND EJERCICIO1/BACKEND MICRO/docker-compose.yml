@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  proyectos-backend-micro:
+    container_name: proyectos-backend-micro
+    image: proyectos-backend-micro:v1
+    build:
+      context: .
+    ports:
+      - "5001:5001"
+    networks:
+      - proyectos-app   
+
+networks:
+  proyectos-app:
+     
